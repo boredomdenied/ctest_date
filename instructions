@@ -1,0 +1,27 @@
+Here is the puzzle: 
+
+Please write a computer program in C to run on a Linux computer using the GNU compiler as part of your technical skills assessment. 
+Puzzle Description: A comma-delimited file has two columns: timeA, timeB. 
+
+- Both columns are times in hh:mm [a|p]m (hh = 1-12, mm = 0-59) or ISO format (YYYY-MM-DD hh24:mm). 
+
+- Times could be in either format, but for any given row the times will be in the same format. Write a program to read the file: 
+
+- For each line report the time that is earlier. Assume same day for each line, and also same timezone for each time. The records should be displayed in the order they are in the file. 
+
+- After the initial print, print for each row, all the times that are later without reading the file again. 
+
+The records should be displayed in reverse order of the file order. 
+
+The program should use linked lists. Include any instructions necessary to build your program.
+
+
+
+Please send your answer along with your resume to me when you can: 
+jfowler@deaconrecruiting.com
+
+
+Thank you! 
+
+Kind Regards,
+Jada
