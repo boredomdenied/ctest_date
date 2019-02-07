@@ -113,9 +113,10 @@ void	dates_to_list(char *str)
 		{
 			before[j++] = str[i++];	
 		}
+		before[j] = '\0';
 		// skip if space exists between dates
 		if (str[i] == ' ')
-			i++;
+			++i;
 		// read 'after'
 		while (str[i] != '\n')
 		{
@@ -125,6 +126,7 @@ void	dates_to_list(char *str)
 
 		if (str[i] == '\n')
 		{
+			after[j] = '\0';
 			push(&head, before, after);
 			i++;
 		}
@@ -147,19 +149,10 @@ char	find_format(char *str)
 
 int main(void)
 {
-
 	char	*str = (file_to_array("beye"));
-//        struct Node* head = NULL; 
 	
 	dates_to_list(str);
-
-//	push(&head, "1", "3");
-//        push(&head, "4", "6");
-//	printBefore(head);
-//        printAfter(head);
-
 	//	char fmt = find_format(str);
-
 //	printf("%s", str);
     return 0;
 }
